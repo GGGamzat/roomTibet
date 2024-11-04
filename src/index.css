@@ -1,13 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,600;6..12,700;6..12,800&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: 'Nunito Sans', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.wrapper {
+	display: flex;
+/*	margin: 0 auto;*/
+	height: 100%;
+	width: 100%;
+	flex-direction: column;
+}
+
+.header {
+	position: absolute;
+	height: 104px;
+	width: 100%;
+/*	left: 0;
+	top: 0;*/
+	z-index: 100;
+}
+
+.header_container {
+	display: flex;
+	margin: 0 auto;
+	padding-top: 16px;
+	height: 72px;
+	max-width: 1180px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.menu {
+	display: flex;
+	list-style: none;
+	column-gap: 24px;
+}
+
+.menu__link {
+	color: #FDFDFD;
+	font-size: 18px;
+	font-weight: 600;
+	font-family: Nunito Sans;
+	text-decoration: none;
+}
+
+.header_container button {
+	height: 44px;
+	width: 157px;
+}
+
+.btn {
+	font-size: 16px;
+	font-weight: 600;
+	font-family: Nunito Sans;
+	border-radius: 4px;
+	border: none;
+	color: #FDFDFD;
+	background-color: #1A3E3E;
+}
+
+
+
+.main {
+	flex: 1 1 auto;
+}
+
+.main_container {
+	position: relative;
+	z-index: 1;
+}
+
+.main-block {
+}
+
+.main-block__container {
+	display: flex;
+  	justify-content: center;
+}
+
+.main-block__body {
+	position: absolute;
+	z-index: 50;
+	padding-top: 551px;
+}
+
+.main-block__title {
+	color: #FDFDFD;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.main-block__form {
+	background: transparent;
+	backdrop-filter: blur(10px);
+	border-radius: 10px;
+}
+
+.main-block__form__container {
+	display: flex;
+	padding: 40px 42px 40px 43px;
+	column-gap: 24px;
+}
+
+.main-block__form-field {
+	padding: 14px 0;
+	width: 270px;
+	color: #FDFDFD;
+	font-family: Nunito Sans;
+	border-radius: 8px;
+	border: 1px solid #E1E3E4;
+}
+
+.form-field__name {
+}
+
+.main-block__form-label {
+	font-size: 14px;
+	font-weight: 400;
+	color: #FDFDFD;
+}
+
+.main-block__form-field img {
+	padding: 2px 0;
+}
+
+.main-block__form button {
+	height: 52px;
+	width: 213px;
+	border-radius: 4px;
+	border: none;
+	font-size: 16px;
+	font-weight: 700;
+	font-family: Nunito Sans;
+	color: #1A3E3E;
+	background-color: #FDFDFD;
+}
+
+.main-block__image {
+	position: relative;
+	z-index: 2;
+}
+
+.main-block__image img {
+	height: 100vh;
+	width: 100%;
+/*	object-fit: cover;*/
+}
+
+
+.section-1 {
+	display: flex;
+  	justify-content: center;
+}
+
+.section-1_container {
+	display: flex;
+  	justify-content: center;
+	padding-top: 100px;
+	column-gap: 120px;
+}
+
+.section-1__img-1 {
+	position: absolute;
+	z-index: 1;
+}
+
+.section-1__img-2 {
+	position: absolute;
+	z-index: 2;
+/*	top: 126px;
+	left: 130px;*/
+}
+
+.label-section {
+	color: #F2BE22;
+}
+
+.section-1__block-left {
+	position: relative;
+}
+
+.section-1__block-left {
+}
+
+.section-1__block-right button {
+	height: 52px;
+	width: 200px;
+}
+
+
+
+
+
+
+.footer {
+	color: #000;
 }
